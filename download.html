@@ -11,49 +11,62 @@
 <link rel="stylesheet" href="style.css">
     <style>
 
-   .p-box{
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
 
-          width: 958px;
-          height: 698px;
-          outline: 3px solid;
-          color :black;
+}
+   /* .container{
+          display: flex;
+          flex-wrap: wrap;
+          width: 70%;
+          width: 1030px;
+          min-height: 698px;
+          outline: 2px black solid;
+          color:white;
           margin-left: 142px;
           margin-top: -670px;
           border-radius: 0%;
-
-       }
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          
+       } */
 
           *{
+          
           margin-left:130px;
           padding: 0px;        
           padding-right: 100px;
           border-radius: 6px;
           background-color:white;
           font-family: "Poppins", sans-serif;
-          font-weight: 700;
+        
           font-style: normal;
 
         }
 
        img{
-            width: 530px;
+            width: 580px;
             height:700px;
-            padding-left: 540px;
+            padding-left: 565px;
             padding-top:150px;
        }
            
        h1{
-           margin-top:-600px;
+           margin-top:-600px;;
            margin-left:95px;
            font-size:35px;
            padding-left: 10px;
            padding-top:7px;
+           font-weight:500;
+           
 
          }
 
       h3{
         margin-right:0px;
-        font-size: 20px;
+        font-size: 18px;
         border-radius: 45px;
         margin-left: -27px;
         padding-bottom: -10px;
@@ -61,18 +74,28 @@
         margin-bottom: 0px;
         margin-top: 0px;
         width: 500px;
+        font-weight: 600;
 
       }
       h5{
-          margin-top:0px;
-          font-weight:600;
+          margin-top:-20px;
+          font-weight:500;
           font-size:20px;
           margin-left: 104px;
+          letter-spacing: -1px;
+          word-spacing: -1px;
+
       }
        input{
-             width:250px;
+             width:270px;
              margin-left: 100px;
-             padding-left: 5px;
+             padding-left: 13px;
+             border: 1px solid #ccc;
+             font-weight: 500;
+             height: 25px;
+             border-radius: 12px;
+             transition: border 0.3s;
+             
        }
 
       h6{
@@ -90,7 +113,11 @@
           padding-right: 0px;
           margin-left: 95px;
           height: 27px;
-          border-radius: 10px;
+          border-radius: 20px;
+          margin-bottom: -10px;
+          margin-top: -40px;
+          font-weight: 500;
+          font-size: 16px;
           
       }
 
@@ -100,7 +127,8 @@
            height:30px;
            border-radius: 10px;
            margin-top:30px;
-           margin-left: 105px;        
+           margin-left: 105px; 
+           font-weight: 600;       
       }
 
     .button1{
@@ -109,19 +137,43 @@
              height:30px;
              border-radius:10px;
              margin-bottom: 0px;
-             margin-left:05px;
+             margin-left:0px;
+             font-weight: 600;
+          }
+          a{
+            display:contents;
+            text-align:left;
+            padding: 100px;
+            margin: 130px;
+            font-weight: 700;
+            justify-content: end;
+            
+          }
+          
+
+          p{
+            font-weight: 500; 
+            padding-left: 20px;
+            font-size: 17px;
 
           }
-        
-        .button1 {width: 12.5%;}
-        .button2 {width: 12.5%;}
-        .button3 {width: 27%;}
+
+          h2{
+             font-weight: 400;
+             font-size: 20px;
+             margin-left: 114px;
+          }
+          
+
+        .button1 {width: 13.5%;}
+        .button2 {width: 13.5%;}
+        .button3 {width: 29%;}
         
 
     </style>
     </head>
     <body>
-           
+     <div class="container">    
 
      <!-- forms-->
      <img src="flowers.jpg.png">
@@ -130,17 +182,17 @@
 
 <form>  
     <h1>Welcome back!</h1>
-    <h5>Enter the details of your account</h5>
+    <h5>Enter crendentials to access your account</h5>
     
 
   <form>
   <h3><label for="lname">Email address</label><br></h3>
-  <input type="text" id="lname" name="lname" value="Enter your email"><br><br>
+  <input type="text" id="lname" name="lname" placeholder="Enter your email"><br><br>
   </form> 
-
+  
   <form>
   <h3><label for="fname"> Password</label><br></h3>
-  <input type="text" id="fname" name="fname" value= "Enter your password"><br><br>
+  <input type="text" id="fname" name="fname" placeholder= "Enter your password"><br><br>
   </form>
 
   <form>
@@ -150,7 +202,7 @@
   <form>
         <button class="button button3">Login</button>
 
-        <p>___________OR___________</p>
+        <h2>___________OR___________</h2>
   <form>
         <button class="button button2">Sign in with Google</button>
   <form>
@@ -161,8 +213,6 @@
         </form>
 
      <div class="clr"></div>
-     <div class="p-box">
-
-     </div>
+</div>  
  </body>
  </html>  

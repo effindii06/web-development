@@ -10,18 +10,23 @@
 <link rel="stylesheet" href="style.css">
     <style>
   
-   .p-box{
+   .container{
+            max-width: 1440px;
+            margin:0 auto;
+         }
 
-          width: 958px;
+        /* .container{
+
+          width: 1030px;
           height: 698px;
-          outline: 3px solid;
-          color :black;
+          outline: 2px black solid;
+          color :white;
           margin-left: 142px;
-          margin-top: -665px;
+          margin-top: -690px;
           border-radius: 0%;
 
-       }
-
+       } */
+       
           *{
           margin-left:130px;
           padding: 0px;        
@@ -29,15 +34,14 @@
           border-radius: 7px;
           background-color:white;
           font-family: "Poppins", sans-serif;
-          font-weight: 700;
           font-style: normal;
 
         }
 
        img{
-            width: 530px;
+            width: 580px;
             height:700px;
-            padding-left: 540px;
+            padding-left: 565px;
             padding-top:150px;
         }
            
@@ -47,40 +51,51 @@
            font-size:35px;
            padding-left: 10px;
            padding-top:7px;
+           font-weight: 500;
 
          }
 
       h3{
         margin-right:70px;
-        font-size: 20px;
+        font-size: 18px;
         border-radius: 45px;
         margin-left:-28px;
         padding-bottom: -10px;
         padding-right: 0px;
         margin-bottom: 0px;
         margin-top: 0px;
+        font-weight: 600;
       }
 
        input{
-             width:250px;
+             width:270px;
              margin-left: 100px;
-             padding-left: 5px;
+             padding-left: 13px;
+             border: 1px solid #ccc;
+             height: 25px;
+             border-radius: 10px;
+             font-weight: 500;
+
        }
 
       h4{
         margin-left: 0px;
         margin-top : -50px;
+        font-weight: 500;
+
       }
 
       .button3{
           margin-bottom: 0px;
           padding :0px;
-          background:darkgreen;
+          background-color:darkgreen;
           color:white;
           padding-right: 0px;
           margin-left: 99px;
           height: 27px;
           border-radius: 10px;
+          font-size:16px;
+          
         }
 
     .button2{
@@ -89,7 +104,8 @@
              height:30px;
              border-radius: 10px;
              margin-top:30px;
-             margin-left: 105px;        
+             margin-left: 105px;       
+             font-weight: 600; 
            }
 
     .button1{
@@ -99,15 +115,39 @@
              border-radius:10px;
              margin-bottom: 0px;
              margin-left:05px;
+             font-weight: 600;
            }
+       a{
+         display:contents;
+         text-align: center;
+         font-weight: 700;
+         margin-left:70px;
+
+        }
+        p{
+            font-weight: 500;
+            padding-left: 30px;
+            font-size: 17px;
+
+
+        }
+
+        h2{
+            font-weight: 400;
+            font-size: 20px;
+            margin-left:114px ;
+        }
+
         
-        .button1 {width: 12.5%;}
-        .button2 {width: 12.5%;}
-        .button3 {width: 26.5%;}
+        .button1 {width: 13.5%;}
+        .button2 {width: 13.5%;}
+        .button3 {width: 29%;}
+
 
     </style>
     </head>
     <body>
+      <div class="container">
            
      <!-- forms-->
      <img src="flowers.jpg.png">
@@ -118,38 +158,37 @@
     <h1>Get Started now</h1>
 
   <h3><label for="lname">Name</label><br></h3>
-  <input type="text" id="lname" name="lname" value="Enter your name"><br><br>
+  <input type="text" id="lname" name="lname" placeholder="Enter your name"><br><br>
   </form> 
 
   <form>
   <h3><label for="lname">Email address</label><br></h3>
-  <input type="text" id="lname" name="lname" value="Enter your email"><br><br>
+  <input type="text" id="lname" name="lname" placeholder="Enter your email"><br><br>
   </form> 
 
   <form>
   <h3><label for="fname"> Password</label><br></h3>
-  <input type="text" id="fname" name="fname" value= "Enter your password"><br><br>
+  <input type="text" id="fname" name="fname" placeholder= "Enter your password"><br><br>
   </form>
 
   <form>
  <input type="radio" id="I agree with the terms & policy" name="fav_language" value="I agree with the terms & policy"><br><br>
  <h4><label for="I agree with the terms & policy">I agree with  terms & policy</label></h4>
- 
+
   <form>
         <button class="button button3">Sign Up</button>
 
-        <p>___________OR___________</p>
+        <h2>___________OR___________</h2>
   <form>
         <button class="button button2">Sign in with Google</button>
   <form>
         <button class="button button1">Sign in with Apple</button>
   <form>
-        <p> Have an account?<a href="linking.html">Sign in</a></p>
+        <p> Have an account?<a href="download.html">Sign in</a></p>
 
   </form>
 
      <div class="clr"></div>
-     <div class="p-box">
 
              </div>
        </body>
