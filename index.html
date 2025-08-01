@@ -1,195 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" contents="width=device-width ,initial-scale=1.0">
-    <title>Sign up</title>
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-    <style>
-  
-   .container{
-            max-width: 1440px;
-            margin:0 auto;
-         }
+    .form-box {
+      background: white;
+      width: 320px;
+      margin: 100px auto;
+      border-radius: 10px;
+      padding: 30px 25px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
 
-        /* .container{
+    .tab-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
 
-          width: 1030px;
-          height: 698px;
-          outline: 2px black solid;
-          color :white;
-          margin-left: 142px;
-          margin-top: -690px;
-          border-radius: 0%;
+    .tab-header .active {
+      border-bottom: 2px solid black;
+      color: black;
+    }
 
-       } */
-       
-          *{
-          margin-left:130px;
-          padding: 0px;        
-          padding-right: 100px;
-          border-radius: 7px;
-          background-color:white;
-          font-family: "Poppins", sans-serif;
-          font-style: normal;
+    .tab-header div {
+      color: #aaa;
+      cursor: pointer;
+    }
 
-        }
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      outline: none;
+    }
 
-       img{
-            width: 580px;
-            height:700px;
-            padding-left: 565px;
-            padding-top:150px;
-        }
-           
-       h1{
-           margin-top:-600px;
-           margin-left: 87px;
-           font-size:35px;
-           padding-left: 10px;
-           padding-top:7px;
-           font-weight: 500;
+    .btn {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-         }
+    .btn-primary {
+      background: #00d4c2;
+      color: white;
+      margin-bottom: 10px;
+    }
 
-      h3{
-        margin-right:70px;
-        font-size: 18px;
-        border-radius: 45px;
-        margin-left:-28px;
-        padding-bottom: -10px;
-        padding-right: 0px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-        font-weight: 600;
-      }
-
-       input{
-             width:270px;
-             margin-left: 100px;
-             padding-left: 13px;
-             border: 1px solid #ccc;
-             height: 25px;
-             border-radius: 10px;
-             font-weight: 500;
-
-       }
-
-      h4{
-        margin-left: 0px;
-        margin-top : -50px;
-        font-weight: 500;
-
-      }
-
-      .button3{
-          margin-bottom: 0px;
-          padding :0px;
-          background-color:darkgreen;
-          color:white;
-          padding-right: 0px;
-          margin-left: 99px;
-          height: 27px;
-          border-radius: 10px;
-          font-size:16px;
-          
-        }
-
-    .button2{
-             padding:0px;
-             width:12px;
-             height:30px;
-             border-radius: 10px;
-             margin-top:30px;
-             margin-left: 105px;       
-             font-weight: 600; 
-           }
-
-    .button1{
-             padding: 0px;
-             width:12px;
-             height:30px;
-             border-radius:10px;
-             margin-bottom: 0px;
-             margin-left:05px;
-             font-weight: 600;
-           }
-       a{
-         display:contents;
-         text-align: center;
-         font-weight: 700;
-         margin-left:70px;
-
-        }
-        p{
-            font-weight: 500;
-            padding-left: 30px;
-            font-size: 17px;
-
-
-        }
-
-        h2{
-            font-weight: 400;
-            font-size: 20px;
-            margin-left:114px ;
-        }
-
-        
-        .button1 {width: 13.5%;}
-        .button2 {width: 13.5%;}
-        .button3 {width: 29%;}
-
-
-    </style>
-    </head>
-    <body>
-      <div class="container">
-           
-     <!-- forms-->
-     <img src="flowers.jpg.png">
-
-     <form action="process.php" method="POST">
     
-  <form>
-    <h1>Get Started now</h1>
-
-  <h3><label for="lname">Name</label><br></h3>
-  <input type="text" id="lname" name="lname" placeholder="Enter your name"><br><br>
-  </form> 
-
-  <form>
-  <h3><label for="lname">Email address</label><br></h3>
-  <input type="text" id="lname" name="lname" placeholder="Enter your email"><br><br>
-  </form> 
-
-  <form>
-  <h3><label for="fname"> Password</label><br></h3>
-  <input type="text" id="fname" name="fname" placeholder= "Enter your password"><br><br>
-  </form>
-
-  <form>
- <input type="radio" id="I agree with the terms & policy" name="fav_language" value="I agree with the terms & policy"><br><br>
- <h4><label for="I agree with the terms & policy">I agree with  terms & policy</label></h4>
-
-  <form>
-        <button class="button button3">Sign Up</button>
-
-        <h2>___________OR___________</h2>
-  <form>
-        <button class="button button2">Sign in with Google</button>
-  <form>
-        <button class="button button1">Sign in with Apple</button>
-  <form>
-        <p> Have an account?<a href="download.html">Sign in</a></p>
-
-  </form>
-
-     <div class="clr"></div>
-
-             </div>
-       </body>
- </html>  
